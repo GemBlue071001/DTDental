@@ -1,24 +1,27 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import '../styles/Services.css';
+import service1Image from '../assets/dtdentalservice1.jpg';
+import service2Image from '../assets/dtdentalservice2.jpg';
+import service3Image from '../assets/dtdentalservice3.jpg';
 
 const servicesData = [
   {
     id: 1,
     title: 'Basic Service',
     price: '$99.00',
-    image: '/src/assets/dtdentalservice1.jpg',
+    image: service1Image,
   },
   {
     id: 2,
     title: 'Intermediate Service',
     price: '$149.00',
-    image: '/src/assets/dtdentalservice2.jpg',
+    image: service2Image,
   },
   {
     id: 3,
     title: 'Advanced Service',
     price: '$199.00',
-    image: '/src/assets/dtdentalservice3.jpg',
+    image: service3Image,
   },
 ];
 

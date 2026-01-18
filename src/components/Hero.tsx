@@ -1,5 +1,6 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import '../styles/Hero.css';
+import heroImage from '../assets/dtdentalhero.webp';
 
 export default function Hero() {
   return (
@@ -17,7 +18,7 @@ export default function Hero() {
           </Col>
           <Col md={6} className="hero-image">
             <img
-              src="src\assets\dtdentalhero.webp"
+              src={heroImage}
               alt="Dental Care Products"
               className="hero-img"
             />

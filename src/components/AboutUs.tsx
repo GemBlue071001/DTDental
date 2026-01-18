@@ -1,5 +1,6 @@
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import '../styles/AboutUs.css';
+import aboutUsImage from '../assets/dtdentalaboutus.webp';
 
 export default function AboutUs() {
   return (
@@ -9,7 +10,7 @@ export default function AboutUs() {
           <Row className="about-row">
             <Col md={6} className="about-image">
               <img
-                src="/src/assets/dtdentalaboutus.webp"
+                src={aboutUsImage}
                 alt="Dental Care Products"
                 className="about-img"
               />
