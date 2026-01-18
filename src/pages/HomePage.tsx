@@ -10,8 +10,8 @@ export default function HomePage() {
     <Layout>
       <Hero />
       <Services />
-      <AboutUs />
       <PricingTable />
+      <AboutUs />
       <Contact />
     </Layout>
   )
