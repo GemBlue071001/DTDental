@@ -1,0 +1,154 @@
+@import url('../index.css');
+
+.about-section {
+  background-color: var(--primary);
+  padding: 0;
+  min-height: 600px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.about-row {
+  align-items: stretch;
+  gap: 0;
+  margin: 0 !important;
+  min-height: 600px;
+  width: 100%;
+}
+
+.about-content {
+  padding: 4rem 5rem 4rem 3rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--secondary);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.about-description {
+  font-size: 0.95rem;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+}
+
+.about-learn-btn {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  border: none;
+  padding: 1rem 2.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.about-learn-btn:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex: 1;
+  padding: 0;
+}
+
+.about-img {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  border-radius: 0;
+  object-fit: cover;
+  box-shadow: none;
+}
+
+/* Tablet - keep side-by-side layout */
+@media (max-width: 991px) {
+  .about-section {
+    min-height: 500px;
+  }
+
+  .about-row {
+    min-height: 500px;
+  }
+
+  .about-content {
+    padding: 3rem 2rem;
+  }
+
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .about-img {
+    min-height: 500px;
+  }
+}
+
+/* Mobile - stack vertically */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 0;
+    min-height: auto;
+  }
+
+  .about-row {
+    flex-direction: column;
+    gap: 0;
+    min-height: auto;
+  }
+
+  .about-content {
+    order: 1;
+    padding: 2.5rem 0;
+  }
+
+  .about-image {
+    order: 2;
+    min-height: 350px;
+  }
+
+  .about-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+  }
+
+  .about-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-learn-btn {
+    padding: 0.85rem 2.2rem;
+    font-size: 0.8rem;
+  }
+
+  .about-img {
+    min-height: 350px;
+  }
+}

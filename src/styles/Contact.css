@@ -1,0 +1,146 @@
+@import url('../index.css');
+
+.contact-section {
+  background-color: var(--primary);
+  padding: 5rem 0;
+}
+
+.contact-row {
+  gap: 3rem;
+  margin: 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.contact-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--secondary);
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.contact-subtitle {
+  font-size: 0.95rem;
+  color: #333333;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.contact-form-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-form {
+  width: 100%;
+}
+
+.form-group-col {
+  padding: 0 0.5rem;
+}
+
+.form-group-col:first-child {
+  padding-left: 0;
+}
+
+.form-group-col:last-child {
+  padding-right: 0;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  color: var(--secondary);
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.form-input {
+  background-color: transparent;
+  border: 2px solid var(--secondary);
+  border-radius: 25px;
+  padding: 0.75rem 1.25rem;
+  color: var(--secondary);
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.form-input:focus {
+  background-color: transparent;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.1);
+  color: var(--secondary);
+}
+
+.form-input::placeholder {
+  color: #999999;
+}
+
+.contact-send-btn {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  border: none;
+  padding: 0.9rem 3rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.contact-send-btn:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Tablet */
+@media (max-width: 991px) {
+  .contact-section {
+    padding: 4rem 0;
+  }
+
+  .contact-title {
+    font-size: 2.5rem;
+  }
+
+  .contact-row {
+    gap: 2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 3rem 0;
+  }
+
+  .contact-row {
+    gap: 2rem;
+  }
+
+  .contact-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-subtitle {
+    font-size: 0.9rem;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .form-group-col {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  .contact-send-btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}

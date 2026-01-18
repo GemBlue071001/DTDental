@@ -1,0 +1,155 @@
+@import url('../index.css');
+
+.hero-section {
+  background-color: var(--primary);
+  padding: 0;
+  padding-top: 70px;
+  min-height: 600px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.hero-row {
+  align-items: stretch;
+  gap: 0;
+  margin: 0 !important;
+  min-height: 600px;
+  width: 100%;
+}
+
+.hero-content {
+  padding: 4rem 3rem 4rem 5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: var(--secondary);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.hero-description {
+  font-size: 0.95rem;
+  color: #333333;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+}
+
+.learn-more-btn {
+  background-color: var(--secondary);
+  color: var(--tertiary);
+  border: none;
+  padding: 1rem 2.8rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+}
+
+.learn-more-btn:hover {
+  background-color: #333333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch;
+  flex: 1;
+  padding: 0;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  min-height: 600px;
+  border-radius: 0;
+  object-fit: cover;
+  box-shadow: none;
+}
+
+/* Tablet - keep side-by-side layout */
+@media (max-width: 991px) {
+  .hero-section {
+    min-height: 500px;
+  }
+
+  .hero-row {
+    min-height: 500px;
+  }
+
+  .hero-content {
+    padding: 3rem 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    max-width: 100%;
+  }
+
+  .hero-img {
+    min-height: 500px;
+  }
+}
+
+/* Mobile - stack vertically */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 0;
+    min-height: auto;
+  }
+
+  .hero-row {
+    flex-direction: column;
+    gap: 0;
+    min-height: auto;
+  }
+
+  .hero-content {
+    padding: 2.5rem 0;
+    order: 1;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+  }
+
+  .hero-description {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  .learn-more-btn {
+    padding: 0.85rem 2.2rem;
+    font-size: 0.8rem;
+  }
+
+  .hero-image {
+    order: 2;
+    min-height: 350px;
+  }
+
+  .hero-img {
+    min-height: 350px;
+  }
+}
